@@ -1,0 +1,304 @@
+<div
+  class="position-relative overflow-hidden dark-background-color background-business"
+>
+  <%- include('../layout/partials/navigation') %>
+  <%- include('../layout/partials/business-benefits') %>
+  <div class="mt-5 pb-3 margin-zero web-services-version">
+    <a class="carousel-indicators carousel-angle-style" href="/business/#businessInsights"><i class="fa fa-angle-down fa-5x primary-color"></i></a>
+  </div>
+</div>
+
+<div class="position-relative primary-background-color light-color background-business web-services-version"  id="businessInsights">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="m-0 pt-2 my-5">
+          <h2 class="semiBold text-center">
+            <%= __('BusinessInsights') %>
+          </h2>
+        </div>
+<div class="col-md-12 d-md-flex flex-md-equal  row">
+<div class="col-md-2 border-style text-center">
+  <button class="buttonSliderStyle detailsSlider light-color " data-slide-to="0">
+    <%= __('GeneralInsights') %>
+  </button>
+</div>
+
+<div class="col-md-3 border-style text-center">
+  <button class="buttonSliderStyle detailsSlider light-color" data-slide-to="1">
+    <%= __('B2CAnalytics') %> <br> <%= __('CustomerSegmentation') %>
+  </button>
+</div>
+
+<div class="col-md-3 border-style text-center">
+  
+  <button class="buttonSliderStyle detailsSlider light-color" data-slide-to="2">
+    <%= __('VirtualRegion') %> <br> <%= __('LineAnalytics') %>
+  </button>
+
+</div>
+
+<div class="col-md-2 border-style text-center">
+  <button class="buttonSliderStyle detailsSlider light-color " data-slide-to="3">
+    <%= __('HeatmapsAnd') %> <br> <%= __('BirdView') %>
+  </button>
+</div>
+
+<div class="col-md-2 border-style text-center">
+
+  <button class="buttonSliderStyle detailsSlider light-color" data-slide-to="4">
+    <%= __('COVIDAnalytics') %>
+  </button>
+</div>
+
+</div>
+
+
+        <div class="carousel-item active">
+          
+         
+          <div class="carousel-list d-md-flex flex-md-equal col-md-12 col-sm-12 row padding-style pb-3 <%= __('textDirection') %>">
+          
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %>">
+              <div class="my-2 py-2">
+                <h2 class="light-color semiBoldInsights <%= __('textDirection') %>">
+                  <%= __('GeneralInsightsBenefitsForBusinesses') %>
+                </h2>
+              </div>
+            
+              <div class="mb-5 pb-5 light-color">
+                <ul class="p-3">
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('RealTimeTrafficAndOccupancy') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('PeakHours') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('StaffOptimization') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('QueueManagement') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('WeatherSeasonsCorrelation') %>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 business-insights-img">
+              <img src="/images/business-insights/generalInsights.gif"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+
+         
+   
+          <div class="carousel-list d-md-flex flex-md-equal col-md-12 col-sm-12 row primary-color padding-style pb-3 <%= __('textDirection') %>">
+          
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %>">
+              <div class="my-2 py-2">
+                <h2 class="light-color semiBoldInsights <%= __('textDirection') %>">
+                  <%= __('B2CUserInterfaceAppDataAnalyticsBenefitsForBusinesses') %>
+                </h2>
+              </div>
+            
+              <div class="mb-5 pb-5 light-color">
+                <ul class="p-3">
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('DemographicAnalysis') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('CustomerInterestAnalysis') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('CustomerSpendingAnalysis') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('CustomerRatingAnalysis') %>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 business-insights-img ">
+              <img src="/images/business-insights/B2C.jpg"/>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="carousel-item">
+
+          <div class="carousel-list d-md-flex flex-md-equal col-md-12 col-sm-12 row padding-style pb-3 <%= __('textDirection') %>">
+          
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %>" id="alaa">
+              <div class="my-2 py-2">
+                <h2 class="light-color semiBoldInsights <%= __('textDirection') %>">
+                  <%= __('VirtualGateRegionLineAnalysisBenefitsForBusinesses') %>
+                </h2>
+              </div>
+            
+              <div class="mb-5 pb-5 light-color">
+                <ul class="p-3">
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('EntriesExitsDetection') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('PeopleCounter') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('MovementAnalysis') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('PopularAreaDetection') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('RegionsCorrelationAnalysis') %>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 business-insights-img">
+              <img src="/images/business-insights/virtualRegion.gif"/>
+            </div>
+          </div>
+        </div>
+       
+        <div class="carousel-item">
+
+           
+          
+          <div class="carousel-list d-md-flex flex-md-equal col-md-12 col-sm-12 row padding-style pb-3 <%= __('textDirection') %>">
+          
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %> ">
+              <div class="my-2 py-2">
+                <h2 class="light-color semiBoldInsights <%= __('textDirection') %>">
+                  <%= __('HeatmapBenefitsForBusinesses') %>
+                </h2>
+              </div>
+            
+              <div class="light-color">
+                <ul class="px-3">
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('CustomerCongestionAnalysis') %>
+                    </h3>
+                  </li>
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('PopularAreaDetection') %>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+
+            <div class="col-md-8 col-sm-12 mx-5 business-mobile-img  pb-5">
+              <img src="/images/business-insights/heatMap.gif"/>
+            </div>
+          
+            </div>
+            
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %> birdViewBenefitStyle">
+              <div class="my-2 py-2">
+                <h2 class="light-color semiBoldInsights <%= __('textDirection') %>">
+                  <%= __('BirdViewBenefitsForBusinesses') %>
+                </h2>
+              </div>
+            
+              <div class="light-color">
+                <ul class="px-3">
+                  <li class="light-color">
+                    <h3 class="detailsSlider">
+                      <%= __('AnomaliesDetectionAnalysis') %>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8 col-sm-12 mx-5 business-mobile-img pb-5 mt-5 pt-1">
+                <img src="/images/business-insights/BirdView.gif"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+
+         
+          
+          <div class="carousel-list d-md-flex flex-md-equal col-md-12 col-sm-12 row pb-3 <%= __('textDirection') %>">
+          
+            <div class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden <%= __('textDirection') %>">
+              <div class="padding-style">
+                <p class="light-color detailsSlider mt-3 <%= __('textDirection') %>">
+                  <%= __('COVIDAnalyticsText') %>
+                </p>
+                <p class="light-color detailsSlider mt-3 <%= __('textDirection') %>">
+                  <%= __('assitsBusiness') %>
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-sm-12 ml-md-3 analysis-padding-img business-insights-img">
+              <img src="/images/business-insights/analysis.png"/>
+            </div>
+          </div>
+        </div>
+     
+</div>
+</div>
+<div class="pb-1 web-services-version">
+  <a class="carousel-indicators carousel-angle-style" href="/business/#howWeDoIt"><i class="fa fa-angle-down fa-5x light-color"></i></a>
+</div>
+</div>
+
+<%- include('../layout/partials/business-insights') %>
+<%- include('../layout/partials/how-we-do-it') %>
+<%- include('../layout/partials/footer') %>
+</div>
+
+<script>
+  $(".buttonSliderStyle").first().css('color','#1e1e1e');
+  $(".border-style").first().css('border-bottom','3px solid #1e1e1e');
+  $(".buttonSliderStyle").click(function(){
+    $(".buttonSliderStyle").css('color','#ffffff');
+    $(".border-style").css('border-bottom','3px solid #ffffff');
+    $(this).css('color','#1e1e1e');
+    $(this).parent().css('border-bottom','3px solid #1e1e1e');
+    $('.carousel').carousel(parseInt($(this).attr('data-slide-to')));
+});
+
+  $('.carousel').carousel({
+    interval: false,
+  });
+</script>

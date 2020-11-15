@@ -1,0 +1,41 @@
+<footer class="row dark-background-color col-md-12 px-5 footer pt-3 <%= __('textDirection') %>">
+  <div class="col-md-4">
+    <h3 class="light-color countTheNumber  mx-1"><%= __('emailInfo') %></h3>
+    <ul class="d-inline-flex p-0 list-unstyled">
+      <li>
+        <a href="#" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/fb.png" alt="facebook" /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/pinpoints.me/" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/insta.png" alt="instgram" /></a>
+      </li> 
+      <li>
+        <a href="https://www.linkedin.com/company/pinpointsme" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/linked-in.png" alt="linkedin" /></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCfOUTT5pkaaWCdufnc-8GaQ" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/yt.png" alt="youtube" /></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-5">
+    <h5 class="contactFont light-color subscribe mx-2">
+      <%= __('SubscribeToOurNewsletter') %>
+    </h5>
+    <div class="form-group emailInputButton">
+      <input
+        type="email"
+        class="form-control gray-color email-mobile-style emailInput"
+        name="emailInp"
+        id="email"
+        placeholder="<%= __('EmailAddress') %>"
+      /> &nbsp; &nbsp;
+      <button type="submit" class="excelButton btn btn-primary-color contactFont">
+        <%= __('submit') %>
+      </button>
+    </div>
+  </div>
+  <div class="col-md-3 px-1 cpyRight <%= __('textReverse') %>">
+    <h5 class="contactFont gray-color copyRightClass" style="font-size: 80%;">
+      <%= __('CopyRights') %>
+    </h5>
+  </div>
+</footer>

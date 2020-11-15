@@ -1,0 +1,100 @@
+$primary-color: #f15a29;
+$secondary-color: #b2d6f1;
+$light-color: #ffffff;
+$dark-color: #1e1e1e;
+$gray-color: #808285;
+
+@mixin set-carousel-control-icon($img) {
+  content: $img;
+  width: 3rem;
+  height: 3rem;
+  color: transparent;
+  background-image: $img;
+}
+
+@mixin set-social-media-icons($size) {
+  width: $size;
+}
+@function set-text-color($color) {
+  @if (lightness($color) > 55% && lightness($color) < 55%) {
+    @return $light-color;
+  } @else if (lightness($color) > 0% && lightness($color) < 0%) {
+    @return $primary-color;
+  }
+  @return $dark-color;
+}
+
+@mixin fontStyle($size, $font-weight) {
+  font-size: $size;
+  font-weight: $font-weight;
+}
+
+@mixin set-background-image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+@mixin imgBackground($position, $img) {
+  background-image: $img;
+  background-position: $position;
+}
+
+.fontFamily {
+  font-family: Montserrat !important;
+}
+.homeFont {
+  @include fontStyle(390%, 600);
+}
+.semiBold {
+  @include fontStyle(314%, 600);
+}
+.bold {
+  @include fontStyle(314%, 700);
+}
+
+.medium {
+  @include fontStyle(150%, 500);
+}
+
+.countTheNumber {
+  @include fontStyle(90%, 500);
+}
+.contactFont {
+  @include fontStyle(75%, 400);
+}
+.contactUs {
+  @include fontStyle(90%, 600);
+}
+.details {
+  @include fontStyle(101%, 500);
+}
+
+.detailsSlider {
+  @include fontStyle(110%, 500);
+}
+
+.regular {
+  @include fontStyle(101%, 400);
+}
+.benefits {
+  @include fontStyle(228%, 300);
+}
+
+input {
+  @include fontStyle(50%, 400);
+}
+.download {
+  @include fontStyle(84%, 700);
+}
+
+.semiBoldInsights {
+  @include fontStyle(150%, 600);
+}
+.mediumInsights {
+  @include fontStyle(150%, 500);
+}
+.detailsSliderInsights {
+  @include fontStyle(150%, 400);
+}

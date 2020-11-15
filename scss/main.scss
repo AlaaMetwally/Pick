@@ -1,0 +1,478 @@
+@import 'config';
+@import 'mobile';
+
+.primary-background-color {
+  background-color: $primary-color;
+}
+.primary-color {
+  color: $primary-color;
+}
+.homeClass {
+  padding-top: 6.5%;
+}
+.dark-background-color {
+  background-color: $dark-color;
+}
+.dark-color {
+  color: $dark-color;
+}
+.light-background-color {
+  background-color: $light-color;
+}
+.gray-color {
+  color: $gray-color;
+}
+.light-color {
+  color: $light-color;
+}
+
+.background-business {
+  background-size: 100% 100% !important;
+  text-align: center;
+  @include set-background-image;
+}
+.background-home-image {
+  @include set-background-image;
+  background-size: 100% 100% !important;
+  background-image: url('/images/background/Photos-01.png');
+}
+.background-image {
+  @include set-background-image;
+  @include imgBackground(bottom, url('/images/background/Photos-03.png'));
+}
+.background-service-image {
+  @include set-background-image;
+  @include imgBackground(top, url('/images/background/Photos-04.png'));
+}
+
+.background-ar-image {
+  @include set-background-image;
+  @include imgBackground(bottom, url('/images/background/Photos-05.png'));
+}
+.background-ar-service-image {
+  @include set-background-image;
+  @include imgBackground(top, url('/images/background/Photos-06.png'));
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.site-header a {
+  transition: ease-in-out color 0.15s;
+  &:hover {
+    color: $light-color;
+    text-decoration: none;
+  }
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.submit-mobile-style {
+  width: 7rem;
+}
+
+.w-42 {
+  width: 42% !important;
+}
+.modalPopUpInput {
+  width: 22rem !important;
+}
+.navbar {
+  @include fontStyle(100%, 500);
+  padding: 1.8rem 1rem;
+  .navbar-toggler-icon {
+    border-right: none;
+    background-image: url('/images/icons/hamburger6.png');
+    font-size: 130%;
+  }
+  .navbar-close-icon {
+    display: grid;
+    justify-content: end;
+    input {
+      width: 3.6em;
+      display: none;
+      margin: -3em 1.7em 0em 2em;
+    }
+  }
+  .navbar-main-brand {
+    display: none;
+  }
+  .navbar-secondry-brand {
+    display: block;
+    margin: 0px;
+  }
+  .socialmedia-icons-o {
+    @include set-social-media-icons(2.5rem);
+  }
+  .navbar-nav {
+    display: table;
+    padding-right: 0px !important;
+    width: 100%;
+    .navbar-right {
+      display: block;
+    }
+    .nav-item {
+      display: table-cell;
+      .nav-link {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.modal-content {
+  width: 34rem !important;
+}
+.navbar-brand {
+  width: max-content;
+}
+span {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.carousel-indicators {
+  padding-right: 0;
+  bottom: -35px;
+  & .active {
+    background-color: $primary-color;
+  }
+  & li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 7px;
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    opacity: 1;
+    background-color: $light-color;
+  }
+}
+.carousel-angle-style {
+  position: initial !important;
+}
+.carousel-item {
+  .business-mobile-img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .business-insights-img {
+    left: 7%;
+    right: 7.5%;
+    padding-top: 2%;
+    img {
+      width: 80%;
+      height: 60%;
+    }
+  }
+}
+.mobile-services-version {
+  display: none !important;
+}
+.web-services-version {
+  display: block;
+}
+.buttonSliderStyle {
+  border: none;
+  background-color: $primary-color;
+  padding-bottom: 3%;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+  &:hover {
+    outline: none;
+  }
+}
+
+.analysis-padding-img {
+  padding-top: 6% !important;
+}
+.mobile-img {
+  width: 42%;
+}
+
+.carousel-control-next-icon {
+  @include set-carousel-control-icon(url('/images/icons/next.png'));
+}
+
+.carousel-control-prev-icon {
+  @include set-carousel-control-icon(url('/images/icons/prev.png'));
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 39% !important;
+}
+
+#mainError {
+  height: 100vh;
+}
+
+.business-icons {
+  width: 6rem;
+}
+
+.socialmedia-icons-o {
+  display: inline-block;
+  @include set-social-media-icons(2rem);
+}
+
+.form-control {
+  height: calc(1.5em + 0.75rem + 5px);
+}
+
+.get-demo-div {
+  nav a {
+    &:hover {
+      color: $dark-color;
+    }
+  }
+}
+
+a {
+  outline: none;
+}
+
+.btn {
+  box-shadow: none;
+  &:focus {
+    box-shadow: none;
+    color: set-text-color($primary-color);
+  }
+  &:hover {
+    color: set-text-color($primary-color);
+  }
+  img {
+    width: 10%;
+  }
+  .download {
+    border-right: none;
+  }
+}
+.dropdown-menu {
+  background: transparent;
+  top: 65%;
+  min-width: 0;
+  .dropdown-item {
+    background: transparent;
+  }
+}
+
+#howWeDoIt ul {
+  li {
+    list-style: disc;
+  }
+}
+
+.carousel-list,
+.business-insights-img {
+  height: 70vh;
+  .dark-color {
+    ul {
+      li {
+        list-style: disc;
+      }
+    }
+  }
+}
+
+.logo-footer {
+  width: 27%;
+  position: absolute;
+  bottom: 21%;
+  left: 4%;
+  right: 6%;
+}
+
+.fa-angle-down {
+  position: absolute;
+  bottom: 0%;
+}
+
+.padding-style {
+  padding-top: 4.6rem;
+}
+
+.padding-services-style {
+  padding-top: 4.2rem;
+}
+
+.light-background-color {
+  .btn {
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+      color: $dark-color;
+    }
+    &:hover {
+      color: $dark-color;
+    }
+  }
+}
+
+.copyRightClass {
+  top: 59%;
+  position: relative;
+}
+
+.emailInputButton {
+  display: inline-flex !important;
+  input,
+  input::-webkit-input-placeholder {
+    @include fontStyle(83%, 400);
+  }
+}
+
+.mail-text {
+  display: none;
+}
+
+.fa-globe {
+  background: transparent;
+  border: none;
+}
+.btn-primary-color {
+  color: $light-color;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:focus {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &:active {
+    color: $primary-color;
+    background: $light-color;
+  }
+  a {
+    color: $light-color;
+  }
+}
+
+.btn-light {
+  display: block;
+}
+.col-md-12 {
+  display: flex;
+}
+.row {
+  margin: 0px;
+}
+
+.get-demo-12 {
+  display: block !important;
+}
+.demo-form {
+  left: 6.5%;
+  right: 6.5%;
+}
+.padding-eighteen {
+  padding-top: 10rem;
+}
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.birdViewBenefitStyle {
+  left: 5%;
+  right: 5%;
+}
+.contactUsLogo {
+  top: 2.4rem;
+  a {
+    img {
+      width: 2.2rem;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.border-style {
+  border-bottom: 3px solid white;
+}
+
+.subscribe {
+  position: inherit;
+  left: 11%;
+  right: 19%;
+}
+
+.modal-footer {
+  border: none;
+}
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.modal-title {
+  top: 10px;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  @include mobile;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@media (min-height: 1280px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@media (min-height: 1024px) {
+  .col-md-6 {
+    max-width: 100% !important;
+  }
+}

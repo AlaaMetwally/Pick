@@ -1,0 +1,129 @@
+<div class="d-md-flex flex-md-equal light-background-color get-demo-display text-center" id="get-demo-mobile">
+    <div class="row mt-4 pt-4">
+      <div class="col-md-12 col-sm-12 col-lg-5 get-demo-12 px-3 px-md-5 ">
+        <h6 class="primary-color bold <%= __('textDirection') %>">
+          <%= __('GetYourDemo') %>
+        </h6>
+        <h2 class="dark-color details <%= __('textDirection') %>">
+          <%= __('FillInYourDetails ') %>
+        </h3>
+      </div>
+      <div class="col-md-12 col-sm-12 col-lg-6 get-demo-12 mt-2 pt-5 demo-form">
+          <% if(locals.successMessage) {%>
+          <div class="alert alert-success">
+            <%= successMessage %>
+          </div>
+          <%}%>
+        <form class="needs-validation" novalidate="" method="POST" action="/business/get-demo">
+          <div class="row get-demo-mobile">
+            <div class="col-md-6 mb-3 pl-0 pr-0">
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="<%= __('FirstName') %>*"
+                value="<%= body ? body.firstName : '' %>"
+                required="true"
+                name="firstName"
+              />
+         
+              <% if(locals.errors && errors.find(x => x.param === 'firstName')) {%>  
+                <div class="invalid-feedback" style="display: block;">
+                  <%= __(errors.find(x => x.param === 'firstName').msg)%>
+                </div>
+              <%}%>
+              
+            </div>
+            <div class="col-md-6 mb-3 <%= __('padding') %>">
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="<%= __('LastName') %>*"
+                value="<%= body ? body.lastName : '' %>"
+                required="true"
+                name="lastName"
+              />
+              <% if(locals.errors && errors.find(x => x.param === 'lastName')) {%>  
+                <div class="invalid-feedback" style="display: block;">
+                  <%= __(errors.find(x => x.param === 'lastName').msg)%>
+                </div>
+              <%}%>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="<%= __('WorkEmail') %>*"
+                required="true"
+                name="email"
+                value="<%= body ? body.email : '' %>"
+              />
+              <% if(locals.errors && errors.find(x => x.param === 'email')) {%>  
+                <div class="invalid-feedback" style="display: block;">
+                  <%= __(errors.find(x => x.param === 'email').msg)%>
+                </div>
+              <%}%>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <input 
+            type="text" 
+            class="form-control" 
+            id="job-title" 
+            placeholder="<%= __('JobTitle') %>*" 
+            required="true"
+            value="<%= body ? body.jobTitle : '' %>"
+            name="jobTitle"/>
+            <% if(locals.errors && errors.find(x => x.param === 'jobTitle')) {%>  
+              <div class="invalid-feedback" style="display: block;">
+                <%= __(errors.find(x => x.param === 'jobTitle').msg)%>
+              </div>
+            <%}%>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="company-name"
+              placeholder="<%= __('CompanyName') %>*"
+              required="true"
+              value="<%= body ? body.companyName : '' %>"
+              name="companyName"
+            />
+            <% if(locals.errors && errors.find(x => x.param === 'companyName')) {%>  
+              <div class="invalid-feedback" style="display: block;">
+                <%= __(errors.find(x => x.param === 'companyName').msg)%>
+              </div>
+            <%}%>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="phone-number"
+              placeholder="<%= __('PhoneNumber') %>*"
+              required="true"
+              value="<%= body ? body.phoneNumber : '' %>"
+              name="phoneNumber"
+            />
+            <% if(locals.errors && errors.find(x => x.param === 'phoneNumber')) {%>  
+              <div class="invalid-feedback" style="display: block;">
+                <%= __(errors.find(x => x.param === 'phoneNumber').msg)%>
+              </div>
+            <%}%>
+          </div>
+         
+          <button class="btn  btn-lg  primary-color submit-get-demo-button pb-5 mb-5" type="submit"><%= __('SendToGetYourDemo') %></button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>

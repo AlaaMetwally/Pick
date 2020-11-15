@@ -1,0 +1,373 @@
+<div class="position-relative text-center background-home-image dark-background-color">
+  <div
+    class="alert alert-success signup-success d-none"
+    style="position: fixed; z-index: 999; width: 100%;"
+  >
+    You have successfully sign up for our upcoming launch
+  </div>
+  <%- include('../layout/partials/navigation') %>
+  <div class="homeClass">
+    <h2 class="primary-color homeFont">
+      <%= __('EverWorriedAbout') %><br />
+      <%= __('LeavingYourHome') %><br />
+      <%= __('DuringCovid19') %>
+    </h2>
+  </div>
+  <div class="mt-5 margin-zero angle-down web-services-version">
+    <a class="carousel-indicators carousel-angle-style" href="/#withPinPoint"
+      ><i class="fa fa-angle-down fa-5x light-color"></i
+    ></a>
+  </div>
+</div>
+
+<div
+  class="position-relative text-center <%= __('BackGround') %> dark-background-color"
+  id="withPinPoint"
+>
+  <div class="d-md-flex flex-md-equal col-md-12 col-sm-12 row">
+    <div
+      class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden padding-style <%= __('textDirection') %>"
+    >
+      <div class="my-4 py-4">
+        <h2 class="primary-color semiBold <%= __('textDirection') %>">
+          <%= __('WithPinPoint') %><br />
+          <%= __('YouWill') %>
+        </h2>
+      </div>
+
+      <div class="mb-5 pb-5">
+        <h2 class="medium <%= __('textDirection') %>"><%= __('SafelyVisitYourFavorite') %></h2>
+        <h2 id="typewritter" class="medium <%= __('textDirection') %>"></h2>
+      </div>
+
+      <div
+        class="col-md-10 col-xl-7 col-sm-7 mx-0 px-0 <%= __('textDirection') %> download-section"
+      >
+        <button
+          type="button"
+          class="flex-md-equal btn btn-light my-4 w-100"
+          data-toggle="button"
+          aria-pressed="false"
+          autocomplete="off"
+          dir="<%= __('ReverseDirection') %>"
+        >
+          <img src="/images/icons/apple.png" />&nbsp;
+          <span class="fontFamily download align-middle">DOWNLOAD FOR IOS</span>
+        </button>
+
+        <button
+          type="button"
+          class="flex-md-equal btn btn-light w-100"
+          data-toggle="button"
+          aria-pressed="false"
+          autocomplete="off"
+          dir="<%= __('ReverseDirection') %>"
+        >
+          <img src="/images/icons/play.png" />&nbsp;
+          <span class="fontFamily download align-middle">DOWNLOAD FOR ANDROID</span>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="col-md-6 col-sm-6 text-white overflow-hidden pt-5 mt-5 text-center mobile-style-padding-bottom"
+    >
+      <img class="mobile-img" src="/images/mobile/mobile_image.png" alt="mobile_image" />
+    </div>
+  </div>
+  <div class="mt-5 pb-3 web-services-version">
+    <a class="carousel-indicators carousel-angle-style" href="/#services"
+      ><i class="fa fa-angle-down fa-5x primary-color"></i
+    ></a>
+  </div>
+</div>
+
+<div
+  class="position-relative text-center <%= __('ServiceBackGround') %> light-background-color web-services-version"
+  id="services"
+>
+  <div class="d-md-flex flex-md-equal col-md-12 col-sm-12 row" style="min-height: 100vh;">
+    <div
+      class="col-md-6 col-sm-12 mr-md-3 px-3 px-md-5 text-white overflow-hidden padding-services-style <%= __('textDirection') %>"
+    >
+      <div class="my-4 py-4">
+        <h2 class="primary-color semiBold <%= __('textDirection') %>">
+          <%= __('Our') %> <br /><%= __('Services') %>
+        </h2>
+      </div>
+
+      <div class="d-none">
+        <h2 class="dark-color medium pb-3">
+          <%= __('NoMoreAnxietyWhenYou') %>
+          <br />
+          <%= __('LeaveYourHouse') %>
+        </h2>
+        <h2 class="dark-color medium">
+          <%= __('NoMoreWaitingInLine') %>
+          <br />
+          <%= __('IfThePlaceIsBusy') %>
+        </h2>
+      </div>
+      <div>
+        <h2 class="medium mb-4 servicesText_0 servicesText dark-color">
+          <%= __('WeCountTheNumberOfPeopleInThe') %><br />
+          <%= __('StoriesForYou') %>
+        </h2>
+        <h2 class="medium mb-4 servicesText_1 servicesText dark-color">
+          <%= __('YouViewTheLiveData') %> <%= __('OfFootTraffic') %>
+        </h2>
+        <h2 class="medium mb-4 servicesText_2 servicesText dark-color">
+          <%= __('WePutYouInTheWaitingList') %> <br />
+          <%= __('IfThePlaceIsFull') %>
+        </h2>
+        <h2 class="medium servicesText_3 servicesText dark-color">
+          <%= __('EarnMoneyByScanningYourReceipts') %>
+        </h2>
+        <h2 class="medium servicesText_3 servicesText dark-color" style="font-size: 130%;">
+          <%= __('WithPinPointsRewardProgram') %>
+        </h2>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6 text-white overflow-hidden pt-5 mt-5 text-center">
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-slide-to="0" class="active"></li>
+          <li data-slide-to="1"></li>
+          <li data-slide-to="2"></li>
+          <li data-slide-to="3"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active d-block">
+            <img class="mobile-img" src="/images/mobile/Photos-05.png" alt="mobile" />
+          </div>
+          <!--/First slide-->
+          <!--Second slide-->
+          <div class="carousel-item d-block">
+            <img class="mobile-img" src="/images/mobile/Photos-06.png" alt="mobile" />
+          </div>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <div class="carousel-item d-block">
+            <img class="mobile-img" src="/images/mobile/Photos-07.png" alt="mobile" />
+          </div>
+          <!--Forth slide-->
+          <div class="carousel-item d-block">
+            <img class="mobile-img" src="/images/mobile/Photos-08.png" alt="mobile" />
+          </div>
+          <!--/Forth slide-->
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a
+          class="carousel-control-prev"
+          href="#carousel-example-1z"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-example-1z"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+  </div>
+</div>
+<div class="mobile-services-version">
+  <%- include('../layout/partials/services') %> <%- include('../layout/partials/business-benefits')
+  %> <%- include('../layout/partials/business-insights') %> <%-
+  include('../layout/partials/how-we-do-it') %><%- include('../layout/partials/get-demo') %>
+</div>
+<%-include('../layout/partials/footer') %>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModalCenter"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-one">
+        <div class="modal-header text-center">
+          <h6 class="modal-title w-100 primary-color" id="exampleModalLongTitle">
+            <%= __('SignUpForOurNextLaunch') %><br /><%= __('ToOurApp') %>
+          </h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="border: none;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body pt-0 pb-5 w-100">
+          <input
+            type="email"
+            class="form-control gray-color w-100 modalPopUpInput mx-1 emailInput"
+            name="emailInpu"
+            placeholder="<%= __('EmailAddress') %>"
+            id="mail"
+          />
+          <button type="submit" class="excelButton btn btn-primary-color regular">
+            <%= __('submit') %>
+          </button>
+        </div>
+      </div>
+      <div class="modal-two d-none">
+        <div class="modal-header" style="justify-content: center; display: grid;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="border: none;">&times;</span>
+          </button>
+          <img src="/images/icons/check.png" style="width: 20%;" class="mx-auto" />
+        </div>
+        <div class="modal-body pt-0 pb-5 w-100" style="text-align: center; display: inline-block;">
+          <h3 class="primary-color semiBoldInsights pt-0"><%= __('ThankYou') %></h3>
+          <p class="dark-color detailsSlider"><%= __('ForSubmittingYourEmail') %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('.signup-success').addClass('d-none');
+    $('.excelButton').on('click', function (e) {
+      e.preventDefault();
+
+      $.ajax({
+        url: '/excel',
+        type: 'POST',
+        dataType: 'json',
+        cache: true,
+        data: { data: $(this).prev().val() },
+        success: function (data) {
+          if ($('.email-mobile-style').val()) {
+            $('.signup-success').fadeIn();
+            $('.signup-success').removeClass('d-none');
+          }
+
+          $('.emailInput').val('');
+          $('.modal-one').addClass('d-none');
+          $('.modal-two').removeClass('d-none');
+          setTimeout(function () {
+            if ($('.modal').hasClass('show')) {
+              $('.modal').modal('hide');
+            }
+            if (!$('.email-mobile-style').val()) {
+              $('.signup-success').fadeOut();
+            }
+          }, 1500);
+
+          return data;
+        },
+        error: function (jqXHR, textStatus, err) {
+          console.log('text status ' + textStatus + ', err ' + err);
+        },
+      });
+    });
+
+    var firstSite = sessionStorage['firstSite'];
+    if (!firstSite) {
+      // or firstSite != "visited"
+      // some code here if the user is new to the site
+      setTimeout(function () {
+        $('.modal').modal('show');
+      }, 6000);
+
+      sessionStorage['firstSite'] = 'visited';
+    }
+  });
+
+  if ($('.mobile-services-version').css('display') != 'none') {
+    $('.servicesText').css('display', 'none');
+    $('.servicesText_0').css('display', 'block');
+    $('.servicesText').css('color', '#1e1e1e');
+    $('.carousel').on('slid.bs.carousel', function () {
+      $('.servicesText').css('display', 'none');
+      $('.servicesText_' + $('.active:eq(2)').attr('data-slide-to')).css('display', 'block');
+    });
+  } else {
+    $('.servicesText_0').css('color', '#f15a29');
+    $('.carousel').on('slid.bs.carousel', function () {
+      $('.servicesText').css('color', '#1e1e1e');
+      $('.servicesText_' + $('.active').attr('data-slide-to')).css('color', '#f15a29');
+    });
+  }
+
+  /* eslint-disable func-names */
+  // eslint-disable-next-line func-names
+  document.addEventListener('DOMContentLoaded', function () {
+    // array with texts to type in typewriter
+    const dataText = [
+      "<%= __('Supermarket') %>",
+      "<%= __('Pharmacy') %>",
+      "<%= __('Restaurant') %>",
+      "<%= __('Mall') %>",
+    ];
+
+    // type one text in the typwriter
+    // keeps calling itself until the text is finished
+    function typeWriter(text, i, fnCallback) {
+      // chekc if text isn't finished yet
+      if (i < text.length) {
+        // add next character to h1
+        document.getElementById('typewritter').innerHTML = `${text.substring(
+          0,
+          i + 1
+        )}<span aria-hidden="true"></span>`;
+
+        // wait for a while and call this function again for next character
+        setTimeout(function () {
+          typeWriter(text, i + 1, fnCallback);
+        }, 100);
+      }
+      // text finished, call callback if there is a callback function
+      else if (typeof fnCallback === 'function') {
+        // call callback after timeout
+        setTimeout(fnCallback, 700);
+      }
+    }
+    // start a typewriter animation for a text in the dataText array
+    function StartTextAnimation(i) {
+      if (i > dataText.lenght && typeof dataText[i] === 'undefined') {
+        setTimeout(function () {
+          StartTextAnimation(0);
+        }, 20000);
+      }
+      // check if dataText[i] exists
+      if (i < dataText.length) {
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+      }
+      if (i === dataText.length) {
+        // eslint-disable-next-line no-param-reassign
+        i = 0;
+        // text exists! start typewriter animation
+        typeWriter(dataText[i], 0, function () {
+          // after callback (and whole text has been animated), start next text
+          StartTextAnimation(i + 1);
+        });
+      }
+    }
+    // start the text animation
+    StartTextAnimation(0);
+  });
+</script>

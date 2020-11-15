@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-xl pb-2 mb-3">
+  <a class="navbar-brand navbar-main-brand" href="#">
+    <img class="logo-img w-75" src="/images/logo/logo.png" alt="Logo" />
+  </a>
+  <button
+  class="navbar-toggler"
+  data-toggle="collapse"
+  data-target="#navbarNavDropdown"
+  aria-controls="navbarNavDropdown"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse flex-column flex-md-row justify-content-around coll" id="navbarNavDropdown">
+  <div class="navbar-close-icon"> <input type="image" src="/images/icons/close.png"  /></div>
+    <ul class="navbar-nav stretch">
+      <a class="navbar-brand navbar-secondry-brand" href="#">
+        <img class="logo-img w-75" src="/images/logo/logo.png" alt="Logo" />
+      </a>
+      <li class="nav-item ">
+        <a class="nav-link pr-5" href="/"><p><%= __('FirstPage') %></p></a>
+      </li>
+      <li class="nav-item web-services-version">
+        <a class="nav-link" href="/#services"><p><%= __('OurServices') %></p></a>
+      </li>
+      <li class="nav-item mobile-services-version navbar-close-icon">
+        <a class="nav-link" href="/#services-mobile"><p><%= __('OurServices') %></p></a>
+      </li>
+      <li class="nav-item web-services-version">
+        <a class="nav-link" href="/business"><p><%= __('PinPointFor') %>
+        <%= __('Business') %></p></a>
+      </li>
+      <li class="nav-item mobile-services-version navbar-close-icon">
+        <a class="nav-link" href="/#business-mobile"><p><%= __('PinPointFor') %> <%= __('Business') %></p></a>
+      </li>
+      <li class="nav-item web-services-version">
+        <a class="nav-link" href="/business/get-demo"><p><%= __('RequestADemo') %></p></a>
+      </li>
+      <li class="nav-item mobile-services-version navbar-close-icon">
+        <a class="nav-link" href="/#get-demo-mobile"><p><%= __('RequestADemo') %></p></a>
+      </li>
+      <ul class="nav navbar-nav navbar-right w-100 social-nav">
+        <li class="nav-item">
+          <a href="#" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/fb-o.png" alt="facebook" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/pinpoints.me/" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/insta-o.png" alt="instgram" /></a>
+        </li> 
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/company/pinpointsme" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/linked-in-o.png" alt="linkedin" /></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.youtube.com/channel/UCfOUTT5pkaaWCdufnc-8GaQ" target="_blank"><img class="socialmedia-icons-o" src="/images/social-media/yt-o.png" alt="youtube" /></i></a>
+        </li>
+        </ul>
+      <li class="nav-item dropdown">
+        <button
+          class="nav-link dropdown-toggle fa fa-globe fa-lg primary-color"
+          id="navbarDropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+        </button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item primary-color lang-style" href="?lng=en"><%= __('En') %></a>
+          <a class="dropdown-item primary-color lang-style" href="?lng=ar"><%= __('Ar') %></a>
+        </div>
+      </li>
+    </ul>
+    <p class="light-color text-center mail-text">contact@pinpoints.me</p>
+  </div>
+</nav>
